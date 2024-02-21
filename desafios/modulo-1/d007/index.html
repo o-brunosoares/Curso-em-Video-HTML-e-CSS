@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/renovo_logo.ico" type="image/x-icon">
+    <title>Imagem flexível</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F60D;.</p>
+
+    <!-- A tag <picture> me permite trabalhar com a tag <source>, onde os atributos "media/srcset/type" me ajudarão a trabalhar com diferentes tipos e tamanhos de tela -->
+
+    <picture>
+        <!-- 
+            media = indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo "srcset"
+
+            srcset = vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido
+
+            type = vai indicar o media type da imagem que usamos.
+         -->
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-700.jpg" type="image/jpg">
+        <img src="imagens/paisagem.jpg" alt="Vista de um pôr-do-sol em frente a um rio com a silhueta de uma árvore">
+    </picture>
+</body>
+</html>
