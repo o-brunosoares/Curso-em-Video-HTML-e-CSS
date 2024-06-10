@@ -29,15 +29,34 @@
             Com palavras-chave: lighter normal bold bolder
             
             Com variações numéricas: 100, 200, 300, 400, 500, 600, 700, 800 e 900
-            */
-            font-weight: 900;
+            
+            font-weight: bolder;
 
-            /*
+            
             ESTILO DA FONTE
 
             italic ou normal
+            
+            font-style: italic;
+
+            text-decoration: underline;
             */
-            font-style: normal;
+        }
+
+        h1 {
+            /*
+            SHORTHAND - Ordem de procedência de FONT
+
+            font-style: italic;
+            font-weight: Bolder;
+            font-size: 3em;
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            */
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'work Sans';
         }
     </style>
 </head>
