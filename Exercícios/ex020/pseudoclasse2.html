@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais um exemplo de pseudo-classe</title>
+    <style>
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: yellow;
+        }
+
+        .links {
+            font-size: 26px;
+            color: red;
+            text-decoration: none;
+
+            &:hover {
+                color: black;
+                background-color: red;
+                width: 230px;
+            }
+
+            &::before {
+                content: ">>";
+                font-size: 14px;
+                color: gray;
+            }
+
+            &::after {
+                content: " <<";
+                font-size: 14px;
+                color: gray;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passe o mouse aqui
+        <p>Surpresaaaaaaa!</p>
+    </div>
+    <p>Veja o conteudo oculto aparecendo.</p>
+
+        <p class="links"><a href="https://www.google.com.br">Google</a></p>
+        <p class="links"><a href="https://www.facebook.com">facebook</a></p>
+        <p class="links"><a href="https://www.twitter.com">twitter</a></p>
+</body>
+</html>
