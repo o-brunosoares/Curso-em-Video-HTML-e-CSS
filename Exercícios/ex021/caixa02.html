@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tag</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header, main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            border-radius: 8px;
+
+            >ul {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                margin: 0;
+
+                >li {
+                    margin: 0 15px;
+                    list-style: none;
+
+                    >a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    >a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+
+            >aside {
+                background-color: rgb(165, 165, 165);
+                text-align: center;
+            }
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes, política e tecnologia.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, rem! Voluptate in sapiente error molestiae minima dolor deleniti, facilis, eligendi ut, aspernatur dolorem quia! Placeat necessitatibus qui fugit est hic!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste assumenda atque nesciunt quia? Nostrum consequatur debitis repellendus dolorem non repellat voluptatibus libero placeat earum modi, natus blanditiis doloribus quibusdam inventore.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit veniam vitae ipsum commodi quia voluptatibus, minima praesentium impedit, distinctio obcaecati voluptatum natus quaerat expedita cupiditate laudantium rem? Autem, numquam nam?</p>
+                <aside>
+                    <p>Artigo escrito por José da silva</p>
+                </aside>
+            </article>
+            <article></article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <em>Bruno Soares Ferreira</em>.</p>
+    </footer>
+</body>
+</html>
